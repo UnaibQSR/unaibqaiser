@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Unaib Qaiser</title>
+  </head>
+  <body onload="init();">
+    <nav class="relative bg-slate-900 text-white mx-auto p-2">
+      <div class="flex items-center justify-between">
+        <div class="">
+          <img
+            src="/logo/logo.png"
+            alt=""
+            srcset=""
+            width="200px"
+            height="200px"
+          />
+        </div>
+        <div class="hidden md:flex space-x-6 mr-6">
+          <a href="#about" class="hover:text-gray-400">ABOUT ME</a>
+          <a href="#skills" class="hover:text-gray-400">SKILLS</a>
+          <a href="#education" class="hover:text-gray-400">EDUCATION</a>
+          <a href="#contact" class="hover:text-gray-400">CONTACT</a>
+        </div>
+        <button
+          id="menu-btn"
+          class="block hamburger md:hidden focus:outline-none"
+        >
+          <span class="ham-top"></span>
+          <span class="ham-btm"></span>
+          <span class="ham-mdl"></span>
+        </button>
+      </div>
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white text-black hidden sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#about">ABOUT</a>
+          <a href="#skills">SKILLS</a>
+          <a href="#education">EDUCATION</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+    <section id="about">
+      <div
+        class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:pl-52"
+      >
+        <div class="flex flex-col md:mb-15 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            ABOUT MYSELF AND HOBBIES
+          </h1>
+          <p class="max-w-sm text-gray-700 md:text-left">
+            I am a programmer with a passion for writing efficient and effective
+            code. In my free time, I love to escape reality by watching my
+            favorite seasons and movies. From action to comedy, I always find a
+            way to enjoy the story and immerse myself in the characters. Coding
+            by day and movie nights by night, that's my perfect balance.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="Unaib Qaiser Resume.pdf"
+              class="p-1.5 px-4 rounded-full bg-slate-600 text-white text-center hover:bg-blue-600"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+
+        <div class="md:w-1/2">
+          <img
+            src="/illustrations/profile.png"
+            alt=""
+            srcset=""
+            width="300px"
+            height="300px"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div
+        class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:pl-52"
+      >
+        <div class="md:w-1/2 flex flex-row md:pr-4">
+          <div class="mt-5 md:mt-0">
+            <img
+              src="/illustrations/js.png"
+              alt=""
+              width="150px"
+              height="150px"
+            />
+          </div>
+          <div class="mt-5 md:mt-0">
+            <img
+              src="/illustrations/css-3.png"
+              alt=""
+              width="150px"
+              height="150px"
+            />
+          </div>
+          <div class="mt-5 md:mt-0">
+            <img
+              src="/illustrations/html-5.png"
+              alt=""
+              width="150px"
+              height="150px"
+            />
+          </div>
+          <div class="mt-5 md:mt-0">
+            <img
+              src="/illustrations/react.png"
+              alt=""
+              width="150px"
+              height="150px"
+            />
+          </div>
+        </div>
+
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            SKILLS AND COMMAND
+          </h1>
+          <p class="max-w-sm text-gray-700 md:text-left">
+            I am a beginner developer with a strong foundation in HTML, CSS, and
+            JavaScript. I am currently learning React.js and building my skills
+            in creating dynamic user interfaces. Although I am still learning, I
+            am constantly seeking new challenges and opportunities to grow my
+            expertise in the field.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <div
+        class="container flex flex-col md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:pl-52"
+      >
+        <div class="flex flex-col mb-9 md:mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            EDUCATION
+          </h1>
+          <p class="max-w-sm text-gray-700 md:text-left">
+            I am a proud graduate of a Bachelor's program in Computer Science.
+            My formal education provided me with a strong foundation in the
+            field, but I have also learned a great deal through my involvement
+            in the online programming community. I am constantly seeking new
+            ways to challenge myself and grow my knowledge, both through
+            university coursework and self-directed learning
+          </p>
+        </div>
+
+        <div class="m-0 p-0 flex flex-row md:pr-4">
+          <div class="m-0 md:mt-0">
+            <img
+              src="/illustrations/education.png"
+              alt=""
+              width="250px"
+              height="250px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="bg-slate-900">
+      <div class="px-6 mx-auto mt-14 text-center justify-center">
+        <h1 class="text-6xl font-bold text-white">CONTACT ME</h1>
+      </div>
+      <div
+        class="flex flex-row md:flex-row space-x-10 mt-8 pb-4 justify-center mx-5"
+      >
+        <a href="https://github.com/Unaib28" target="_blank"
+          ><img
+            src="/illustrations/github.png"
+            alt=""
+            width="75px"
+            height="75px"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/unaib-qaiser-939620265/"
+          target="_blank"
+          ><img
+            src="/illustrations/linkedin.png"
+            alt=""
+            width="75px"
+            height="75px"
+        /></a>
+        <a href="mailto:unaibqaiser28@gmail.com" target="_blank"
+          ><img
+            src="/illustrations/gmail.png"
+            alt=""
+            width="75px"
+            height="75px"
+        /></a>
+      </div>
+    </section>
+    <footer class="bg-slate-500 text-center text-white">
+      <p>Copyright © 2023 All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
